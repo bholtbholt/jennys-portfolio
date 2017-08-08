@@ -1,0 +1,13 @@
+.content-tab {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity .2s ease-in;
+}
+
+.content-tab._active {
+  opacity: 1;
+  height: auto;
+  overflow: initial;
+}
+

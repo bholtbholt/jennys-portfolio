@@ -1,0 +1,39 @@
+.site-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+}
+
+.site-title {
+  text-align: center;
+  font-size: 5em;
+  font-weight: normal;
+  margin-bottom: .5em;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  padding-left: .6em;
+  padding-right: .6em;
+  background-color: $secondary-color;
+  border-radius: 5px;
+}
+
+.main-nav a {
+  padding: .8em 1.4em;
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-color-hover;
+  }
+}
+
+.main-nav a._active {
+  background-color: $secondary-color-active;
+}
