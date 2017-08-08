@@ -1,9 +1,29 @@
 <header class="site-header">
   <h1 class="site-title">Jennifer Holt</h1>
   <nav class="main-nav">
-    <a class="js-trigger-tab _active" data-tab="js-writing-tab">Writing</a>
-    <a class="js-trigger-tab" data-tab="js-case-studies-tab">Case Studies</a>
-    <a class="js-trigger-tab" data-tab="js-about-tab">About</a>
-    <a class="js-trigger-tab" data-tab="js-contact-tab">Contact</a>
+    <a
+      class="js-trigger-tab {% if page.active_tab == 'writing' %}_active{% endif %}"
+      data-tab="js-writing-tab"
+      data-path="writing"
+      data-title="{{ site.title }} | Writing"
+    >Writing</a>
+    <a
+      class="js-trigger-tab {% if page.active_tab == 'case-studies' %}_active{% endif %}"
+      data-tab="js-case-studies-tab"
+      data-path="case-studies"
+      data-title="{{ site.title }} | Case Studies"
+    >Case Studies</a>
+    <a
+      class="js-trigger-tab {% if page.active_tab == 'about' %}_active{% endif %}"
+      data-tab="js-about-tab"
+      data-path="about"
+      data-title="{{ site.title }} | About"
+    >About</a>
+    <a
+      class="js-trigger-tab {% if page.active_tab == 'contact' %}_active{% endif %}"
+      data-tab="js-contact-tab"
+      data-path="contact"
+      data-title="{{ site.title }} | Contact"
+    >Contact</a>
   </nav>
 </header>

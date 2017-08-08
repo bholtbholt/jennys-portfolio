@@ -3,4 +3,4 @@ layout: default
 active_tab: case-studies
 ---
 
-This is the index page
+This is the case studies page
