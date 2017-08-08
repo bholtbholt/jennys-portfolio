@@ -1,37 +1,56 @@
-const tabs = Array.from(document.querySelectorAll('.js-tab'));
-const tabTriggers = Array.from(document.querySelectorAll('.js-trigger-tab'));
+// This tab implementation considers everything with .js-tab a togglable tab
+// .js-trigger-tab will make it _active
 
-function updateUrl(trigger) {
-  const newPath = trigger.getAttribute('data-path');
-  const pageTitle = trigger.getAttribute('data-title');
+// Tabs will reset their state, apply the new state, and push it to the browser history
 
-  window.history.pushState(newPath, pageTitle, newPath);
-}
+// Tab Trigger elements expect
+// class: js-trigger-tab
+//   - _active will be applied
+// data-tab: the tab to make active
+// data-path: the path to push to history.state
+// data-title: the title of the path
 
-function activateTrigger(targetTrigger) {
-  const activatingTrigger = tabTriggers.filter(trigger => trigger === targetTrigger)[0];
-  activatingTrigger.classList.add('_active');
-}
+// Tabs expect
+// id: must correspond to trigger's data-tab
+// class: js-tab
+//   - _active will be applied
 
-function activateTab(targetTab) {
-  const activatingTab = tabs.filter(tab => tab.id === targetTab)[0];
-  activatingTab.classList.add('_active');
-}
+(function() {
+  const tabs = Array.from(document.querySelectorAll('.js-tab'));
+  const tabTriggers = Array.from(document.querySelectorAll('.js-trigger-tab'));
 
-function resetTabs() {
-  tabs.forEach(tab => tab.classList.remove('_active'));
-  tabTriggers.forEach(trigger => trigger.classList.remove('_active'));
-}
+  function updateUrl(trigger) {
+    const newPath = trigger.getAttribute('data-path');
+    const pageTitle = trigger.getAttribute('data-title');
 
-function toggleActiveTab(e) {
-  const trigger = e.target;
-  const targetTab = trigger.getAttribute('data-tab');
+    window.history.pushState(newPath, pageTitle, newPath);
+  }
 
-  resetTabs();
-  activateTab(targetTab);
-  activateTrigger(trigger);
-  updateUrl(trigger);
-}
+  function activateTrigger(targetTrigger) {
+    const activatingTrigger = tabTriggers.filter(trigger => trigger === targetTrigger)[0];
+    activatingTrigger.classList.add('_active');
+  }
 
-tabTriggers.forEach(trigger => trigger.addEventListener('click', toggleActiveTab));
-window.addEventListener('popstate', e => (window.location = e.state || '/'));
+  function activateTab(targetTab) {
+    const activatingTab = tabs.filter(tab => tab.id === targetTab)[0];
+    activatingTab.classList.add('_active');
+  }
+
+  function resetTabs() {
+    tabs.forEach(tab => tab.classList.remove('_active'));
+    tabTriggers.forEach(trigger => trigger.classList.remove('_active'));
+  }
+
+  function toggleActiveTab(e) {
+    const trigger = e.target;
+    const targetTab = trigger.getAttribute('data-tab');
+
+    resetTabs();
+    activateTab(targetTab);
+    activateTrigger(trigger);
+    updateUrl(trigger);
+  }
+
+  tabTriggers.forEach(trigger => trigger.addEventListener('click', toggleActiveTab));
+  window.addEventListener('popstate', e => (window.location = e.state || '/'));
+})();
