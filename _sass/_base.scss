@@ -1,3 +1,27 @@
+$black: #000;
+$white: #fff;
+
+$primary-color: #12572b;
+$primary-color-hover: #407843;
+$primary-color-active: #023d00;
+
+$secondary-color: #e6b31a;
+$secondary-color-hover: #f2bf26;
+$secondary-color-active: #cc9900;
+
+$margin-sm: 5px;
+$margin: 10px;
+$margin-lg: 20px;
+
 body {
-  color: red;
+  font-size: 16px;
+  min-height: 100vh;
 }
+
+.site-content {
+  max-width: 700px;
+  padding: $margin-lg;
+  margin: 0 auto;
+}
+
+
