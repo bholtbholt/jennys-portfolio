@@ -11,11 +11,13 @@
     {% include article.html article=study %}
   {% endfor %}
 </div>
+
 <div id="js-about-tab"
   class="content-tab js-tab {% if page.active_tab == 'about' %}_active{% endif %}">
   <h1>This is the about page</h1>
 </div>
+
 <div id="js-contact-tab"
   class="content-tab js-tab {% if page.active_tab == 'contact' %}_active{% endif %}">
-  <h2>this is the contact page</h2>
+  {% include contact.html %}
 </div>
