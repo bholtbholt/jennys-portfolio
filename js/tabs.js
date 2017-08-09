@@ -15,7 +15,7 @@
 // class: js-tab
 //   - _active will be applied
 
-(function() {
+(() => {
   const tabs = Array.from(document.querySelectorAll('.js-tab'));
   const tabTriggers = Array.from(document.querySelectorAll('.js-trigger-tab'));
 
