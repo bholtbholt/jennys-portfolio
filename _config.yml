@@ -20,14 +20,38 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+medium: https://medium.com/@jennypreswick
+linkedin: https://www.linkedin.com/in/jennypreswick/
 
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
-
 port: 3000
+safe: true
+
+sass:
+  style: compressed
+
+collections:
+  case-studies:
+    output: true
+    permalink: /:collection/:name
+  writing:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  -
+    scope:
+      type: case-studies
+    values:
+      layout: collection
+  -
+    scope:
+      type: writing
+    values:
+      layout: collection
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

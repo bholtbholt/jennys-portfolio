@@ -1,10 +1,15 @@
 <div id="js-writing-tab"
   class="content-tab js-tab {% if page.active_tab == 'writing' %}_active{% endif %}">
-  <h2>this is the writing page</h2>
+  {% for story in site.writing %}
+    {% include article.html article=story %}
+  {% endfor %}
 </div>
+
 <div id="js-case-studies-tab"
   class="content-tab js-tab {% if page.active_tab == 'case-studies' %}_active{% endif %}">
-  <h2>this is the studies page</h2>
+  {% for study in site.case-studies %}
+    {% include article.html article=study %}
+  {% endfor %}
 </div>
 <div id="js-about-tab"
   class="content-tab js-tab {% if page.active_tab == 'about' %}_active{% endif %}">

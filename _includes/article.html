@@ -1,0 +1,15 @@
+<article id="{{ include.article.slug }}">
+  <h2>{{ include.article.title }}</h2>
+  {{ include.article.content }}
+  {% if include.article.published_url %}
+    <p><a href="{{ include.article.published_url }}" target="_blank" class="read-more">Continue reading on {{ include.article.publisher }}</a></p>
+  {% endif %}
+  <p class="byline">
+    <a href="{{ include.article.url }}">{{ include.article.title }}</a>
+    {% if include.article.published_url %}
+      was originally published on
+      <a href="{{ include.article.published_url }}" target="_blank">{{ include.article.publisher }}</a>
+    {% endif %}
+    <span class="date">{{ include.article.date | date: '%Y, %B %-d' }}</span>
+  </p>
+</article>

@@ -1,6 +1,5 @@
 ---
 layout: default
 active_tab: case-studies
+permalink: case-studies/
 ---
-
-This is the case studies page

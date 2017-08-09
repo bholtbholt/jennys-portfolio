@@ -1,6 +1,5 @@
 ---
 layout: default
 active_tab: writing
+permalink: writing/
 ---
-
-This is the writing page
