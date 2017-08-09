@@ -1,28 +1,35 @@
 <header class="site-header">
-  <h1 class="site-title">Jennifer Holt</h1>
+  <h1 class="site-title">
+    <a href="{{ site.baseurl }}/"
+    class="js-trigger-tab"
+    data-tab="js-case-studies-tab"
+    data-path="{{ site.baseurl }}/"
+    data-title="{{ site.title }}"
+    >Jennifer Holt</a>
+  </h1>
   <nav class="main-nav">
-    <a
+    <a href="{{ site.baseurl }}/writing"
       class="js-trigger-tab {% if page.active_tab == 'writing' %}_active{% endif %}"
       data-tab="js-writing-tab"
-      data-path="writing"
+      data-path="{{ site.baseurl }}/writing"
       data-title="{{ site.title }} | Writing"
     >Writing</a>
-    <a
+    <a href="{{ site.baseurl }}/case-studies"
       class="js-trigger-tab {% if page.active_tab == 'case-studies' %}_active{% endif %}"
       data-tab="js-case-studies-tab"
-      data-path="case-studies"
+      data-path="{{ site.baseurl }}/case-studies"
       data-title="{{ site.title }} | Case Studies"
     >Case Studies</a>
-    <a
+    <a href="{{ site.baseurl }}/about"
       class="js-trigger-tab {% if page.active_tab == 'about' %}_active{% endif %}"
       data-tab="js-about-tab"
-      data-path="about"
+      data-path="{{ site.baseurl }}/about"
       data-title="{{ site.title }} | About"
     >About</a>
-    <a
+    <a href="{{ site.baseurl }}/contact"
       class="js-trigger-tab {% if page.active_tab == 'contact' %}_active{% endif %}"
       data-tab="js-contact-tab"
-      data-path="contact"
+      data-path="{{ site.baseurl }}/contact"
       data-title="{{ site.title }} | Contact"
     >Contact</a>
   </nav>

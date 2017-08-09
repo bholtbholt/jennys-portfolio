@@ -42,6 +42,7 @@
   }
 
   function toggleActiveTab(e) {
+    e.preventDefault();
     const trigger = e.target;
     const targetTab = trigger.getAttribute('data-tab');
 
