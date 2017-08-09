@@ -54,3 +54,9 @@ a {
     border-bottom: 1px solid $primary-color-hover;
   }
 }
+
+.underline-404 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: $warning;
+  -webkit-text-decoration-style: wavy;
+}
