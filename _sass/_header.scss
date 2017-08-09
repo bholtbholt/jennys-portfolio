@@ -1,36 +1,53 @@
 .site-header {
   display: flex;
   flex-direction: column;
-  min-height: 75vh;
-  justify-content: center;
+  min-height: 50vh;
+  justify-content: flex-end;
   align-items: center;
-  color: $black;
+  color: $text-color;
 }
 
 .site-title {
   text-align: center;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: normal;
   margin-bottom: .5em;
+
+  @media ($media-lg) {
+    font-size: 5em;
+  }
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .main-nav {
   display: flex;
   justify-content: center;
-  padding-left: .6em;
-  padding-right: .6em;
+  align-items: center;
   background-color: $secondary-color;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .main-nav a {
-  padding: .8em 1.4em;
+  padding: .6em;
   text-decoration: none;
   color: $white;
   cursor: pointer;
 
   &:hover {
     background-color: $secondary-color-hover;
+  }
+
+  @media ($media-sm) {
+    font-size: 14px;
+  }
+
+  @media ($media-lg) {
+    padding: .8em 1.4em;
   }
 }
 
