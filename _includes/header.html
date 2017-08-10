@@ -1,35 +1,35 @@
 <header class="site-header">
   <h1 class="site-title">
-    <a href="{{ site.baseurl }}/"
+    <a href="{{ site.url }}/"
     class="js-trigger-tab"
     data-tab="js-case-studies-tab"
-    data-path="{{ site.baseurl }}/"
+    data-path="{{ site.url }}/"
     data-title="{{ site.title }}"
     >Jennifer Holt</a>
   </h1>
   <nav class="main-nav">
-    <a href="{{ site.baseurl }}/writing"
+    <a href="{{ site.url }}/writing"
       class="js-trigger-tab {% if page.active_tab == 'writing' %}_active{% endif %}"
       data-tab="js-writing-tab"
-      data-path="{{ site.baseurl }}/writing"
+      data-path="{{ site.url }}/writing"
       data-title="{{ site.title }} | Writing"
     >Writing</a>
-    <a href="{{ site.baseurl }}/case-studies"
+    <a href="{{ site.url }}/case-studies"
       class="js-trigger-tab {% if page.active_tab == 'case-studies' %}_active{% endif %}"
       data-tab="js-case-studies-tab"
-      data-path="{{ site.baseurl }}/case-studies"
+      data-path="{{ site.url }}/case-studies"
       data-title="{{ site.title }} | Case Studies"
     >Case Studies</a>
-    <a href="{{ site.baseurl }}/about"
+    <a href="{{ site.url }}/about"
       class="js-trigger-tab {% if page.active_tab == 'about' %}_active{% endif %}"
       data-tab="js-about-tab"
-      data-path="{{ site.baseurl }}/about"
+      data-path="{{ site.url }}/about"
       data-title="{{ site.title }} | About"
     >About</a>
-    <a href="{{ site.baseurl }}/contact"
+    <a href="{{ site.url }}/contact"
       class="js-trigger-tab {% if page.active_tab == 'contact' %}_active{% endif %}"
       data-tab="js-contact-tab"
-      data-path="{{ site.baseurl }}/contact"
+      data-path="{{ site.url }}/contact"
       data-title="{{ site.title }} | Contact"
     >Contact</a>
   </nav>
