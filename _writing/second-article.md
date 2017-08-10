@@ -1,7 +1,7 @@
 ---
 ---
 
-This is my first sentence.
+This is my first sentence, but now it's longer.
 
 Countless intelligent, educated, and qualified people struggle to get job placements, and often a terrible resume is at fault. Their resumes are a chronological list of places they showed up at. Duties or activities are bulleted under drab headings and dates. The basics have been covered, but they don’t convey anything meaningful.
 
