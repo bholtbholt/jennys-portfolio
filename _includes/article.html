@@ -5,11 +5,13 @@
     <p><a href="{{ include.article.published_url }}" target="_blank" class="read-more">Continue reading on {{ include.article.publisher }}</a></p>
   {% endif %}
   <p class="byline">
-    <a href="{{ include.article.url }}">{{ include.article.title }}</a>
+    <a href="{{ site.url }}/{{ include.article.url }}">{{ include.article.title }}</a>
     {% if include.article.published_url %}
       was originally published on
       <a href="{{ include.article.published_url }}" target="_blank">{{ include.article.publisher }}</a>
     {% endif %}
-    <span class="date">{{ include.article.date | date: '%Y, %B %-d' }}</span>
+    {% if include.article.date %}
+      <span class="date">{{ include.article.date | date: '%Y, %B %-d' }}</span>
+    {% endif %}
   </p>
 </article>
