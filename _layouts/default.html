@@ -7,14 +7,16 @@
     <div class="site-content">
       <div id="js-writing-tab"
         class="content-tab js-tab {% if page.active_tab == 'writing' %}_active{% endif %}">
-        {% for story in site.writing %}
+        {% assign sorted_stories = site.writing | sort: 'order' %}
+        {% for story in sorted_stories %}
           {% include article.html article=story %}
         {% endfor %}
       </div>
 
       <div id="js-case-studies-tab"
         class="content-tab js-tab {% if page.active_tab == 'case-studies' %}_active{% endif %}">
-        {% for study in site.case-studies %}
+        {% assign sorted_studies = site.case-studies | sort: 'order' %}
+        {% for study in sorted_studies %}
           {% include article.html article=study %}
         {% endfor %}
       </div>
