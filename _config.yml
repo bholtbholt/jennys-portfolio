@@ -30,7 +30,7 @@ sass:
   style: compressed
 
 collections:
-  case-studies:
+  technical-writing:
     output: true
     permalink: /:collection/:name
   content-writing:
@@ -40,7 +40,7 @@ collections:
 defaults:
   -
     scope:
-      type: case-studies
+      type: technical-writing
     values:
       layout: collection
       order: 99

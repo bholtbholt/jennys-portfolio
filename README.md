@@ -18,9 +18,9 @@ bundle exec jekyll serve
 
 ## Structure
 There are three main folders you'll want to edit:
-- `_case-studies`: where all the case study files reside
-- `_includes`: where the About and Contact pages reside
+- `_technical-writing`: where all the technical writing files reside
 - `_content-writing`: where all the content writing files reside
+- `_includes`: where the About and Contact pages reside
 
 ## Adding Case Studies or Content Writing articles
 1. Navigate to the folder of the files you want to change

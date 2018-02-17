@@ -13,9 +13,9 @@
         {% endfor %}
       </div>
 
-      <div id="js-case-studies-tab"
-        class="content-tab js-tab {% if page.active_tab == 'case-studies' %}_active{% endif %}">
-        {% assign sorted_studies = site.case-studies | sort: 'order' %}
+      <div id="js-technical-writing-tab"
+        class="content-tab js-tab {% if page.active_tab == 'technical-writing' %}_active{% endif %}">
+        {% assign sorted_studies = site.technical-writing | sort: 'order' %}
         {% for study in sorted_studies %}
           {% include article.html article=study %}
         {% endfor %}
