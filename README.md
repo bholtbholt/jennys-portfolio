@@ -54,13 +54,6 @@ order: order in which articles appear, smallest first. 0 appears before 10. Defa
 ---
 ```
 
-I've added tooltips to your portfolio so you can put notes on the page. They're used in Markdown files like this:
-```
-<span class="tool-tip" data-tooltip="This is what appears in the tooltip">This is the text that triggers it</span>
-```
-
-You must include the entire snippet of code.
-
 ## Saving changes
 1. At the bottom of the screen is the Commit dialog
 1. Enter a commit message on the first line, something like "Add Smart People with Bad Resumes Article" or "Update My Other Article".
