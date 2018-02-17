@@ -25,8 +25,6 @@
 
 .main-nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: $primary-color;
   border-radius: $border-radius;
   overflow: hidden;
@@ -37,6 +35,7 @@
   border-bottom: none;
   color: $white;
   cursor: pointer;
+  text-align: center;
 
   &:hover {
     background-color: $primary-color-hover;
