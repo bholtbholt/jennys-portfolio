@@ -1,6 +1,21 @@
 # Jenny's Portfolio
 Portfolio for Jenny. Built on [Jekyll](https://jekyllrb.com).
 
+## Running this project locally
+Jenny's Portfolio uses Bundler and Jekyll. To install:
+```
+# Ensure bundle is installed
+gem install bundler
+
+# Install the gems
+bundle install
+```
+
+Run with:
+```
+bundle exec jekyll serve
+```
+
 ## Structure
 There are three main folders you'll want to edit:
 - `_case-studies`: where all the case study files reside
