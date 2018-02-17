@@ -33,7 +33,7 @@ collections:
   case-studies:
     output: true
     permalink: /:collection/:name
-  writing:
+  content-writing:
     output: true
     permalink: /:collection/:name
 
@@ -46,7 +46,7 @@ defaults:
       order: 99
   -
     scope:
-      type: writing
+      type: content-writing
     values:
       layout: collection
       order: 99

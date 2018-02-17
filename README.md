@@ -20,9 +20,9 @@ bundle exec jekyll serve
 There are three main folders you'll want to edit:
 - `_case-studies`: where all the case study files reside
 - `_includes`: where the About and Contact pages reside
-- `_writing`: where all the writing files reside
+- `_content-writing`: where all the content writing files reside
 
-## Adding Case Studies or Writing articles
+## Adding Case Studies or Content Writing articles
 1. Navigate to the folder of the files you want to change
 1. Click "Create New File" in the top right corner
 1. Name your file the same as the title in lowercase, with hyphens instead of spaces, and no additional punctuation. The file format is `.md` which stands for Markdown. `Jenny's Best Title Ever = jennys-best-title-ever.md`
