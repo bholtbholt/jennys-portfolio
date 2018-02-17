@@ -1,5 +1,5 @@
 ---
 layout: default
-active_tab: technical-writing
+active_tab: about
 ---
 
