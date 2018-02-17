@@ -18,8 +18,13 @@
 
   @media ($media-lg) {
     font-size: 2.2em;
-    margin-top: $margin-lg;
   }
+}
+
+.site-content img {
+  max-width: 100%;
+  margin-top: $margin-lg;
+  margin-bottom: -$margin;
 }
 
 .site-content p {

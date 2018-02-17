@@ -51,6 +51,7 @@ date: The date you want to appear on your article
 publisher: The name of the publisher who published the article
 published_url: The url of the published article (from an external site)
 order: order in which articles appear, smallest first. 0 appears before 10. Defaults to 99.
+image_url: The url of the image from the article (from an external site)
 ---
 ```
 
