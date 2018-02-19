@@ -32,7 +32,7 @@
       } else {
         formResponse.classList.add('_warning', '_slide-in');
         formResponse.innerHTML =
-          'Something went wrong. Please try again, or <a href="mailto:jennypreswick@gmail.com>email me directly</a>.';
+          'Something went wrong. Please try again, or <a href="mailto:jennypreswick@gmail.com">email me directly</a>.';
       }
     };
   };
