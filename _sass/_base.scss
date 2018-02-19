@@ -20,7 +20,7 @@ $secondary-color-active: $gold-active;
 $warning: #f2705d;
 $success: #53c58c;
 
-$text-color: #000;
+$text-color: #363938;
 $text-color-light: #b1b9b7;
 
 $margin-sm: .5em;
@@ -28,19 +28,30 @@ $margin: 1em;
 $margin-lg: 1.6em;
 $margin-xl: 2em;
 
+$space-xs: .25rem;
+$space-sm:  .5rem;
+$space:      1rem;
+$space-md: 1.6rem;
+$space-lg:   2rem;
+$space-xl:   4rem;
+
 $border-radius: 6px;
 
 $media-sm: "max-width: 699px";
 $media-lg: "min-width: 700px";
 
+html,
 body {
-  font-size: 16px;
-  color: $text-color;
-  padding-bottom: $margin-xl;
+  font-size: 14px;
 
   @media ($media-lg) {
-    font-size: 20px;
+    font-size: 18px;
   }
+}
+
+body {
+  color: $text-color;
+  padding-bottom: $space-lg;
 }
 
 a {

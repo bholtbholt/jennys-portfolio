@@ -1,6 +1,6 @@
 label {
   display: block;
-  margin-bottom: $margin-lg;
+  margin-bottom: $space-lg;
   font-weight: bold;
   color: $primary-color;
 }
@@ -21,7 +21,6 @@ label {
 
 textarea.form-control {
   height: 80px;
-
   resize: vertical;
 }
 
@@ -47,7 +46,7 @@ textarea.form-control {
 }
 
 .form-response {
-  padding: $margin;
+  padding: $space;
   border-radius: $border-radius;
   color: $white;
   transform: translateY(100%);

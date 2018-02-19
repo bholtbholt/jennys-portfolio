@@ -1,17 +1,21 @@
 .site-header {
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+  min-height: 30vh;
   justify-content: flex-end;
   align-items: center;
   color: $text-color;
+
+  @media ($media-lg) {
+    min-height: 50vh;
+  }
 }
 
 .site-title {
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: normal;
-  margin-bottom: .5em;
+  margin-bottom: $space-lg;
 
   @media ($media-lg) {
     font-size: 5em;
@@ -31,7 +35,7 @@
 }
 
 .main-nav a {
-  padding: .6em;
+  padding: $space-sm;
   border-bottom: none;
   color: $white;
   cursor: pointer;
@@ -42,11 +46,11 @@
   }
 
   @media ($media-sm) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media ($media-lg) {
-    padding: .8em 1.4em;
+    padding: $space $space-md;
   }
 }
 

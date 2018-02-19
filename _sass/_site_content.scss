@@ -2,59 +2,46 @@
   max-width: 820px;
   margin: 0 auto;
   line-height: 1.8;
-  padding: $margin;
+  padding: $space-lg $space;
 
   @media ($media-lg) {
-    padding: $margin-xl;
+    padding: $space-xl;
   }
+}
+
+.site-content article {
+  margin-bottom: $space-xl;
 }
 
 .site-content h1,
 .site-content h2 {
   color: $primary-color;
-  font-size: 1.8em;
+  font-size: 1.4rem;
   line-height: 1.4;
   margin-bottom: initial;
+  margin-top: $space;
 
   @media ($media-lg) {
-    font-size: 2.2em;
+    font-size: 1.6rem;
   }
 }
 
 .site-content img {
-  max-width: 100%;
-  margin-top: $margin-lg;
-  margin-bottom: -$margin;
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: $border-radius;
 }
 
 .site-content p {
-  margin-bottom: $margin-lg;
+  margin-bottom: $space;
 }
 
-.site-content .read-more:after {
-  content: "\2026";
-}
-
-.site-content .byline {
+.site-content .read-more {
   color: $text-color-light;
-  border-top: 1px dotted $text-color-light;
-  padding-top: $margin;
-  margin-bottom: $margin-xl;
-  font-size: .8em;
-}
+  border-bottom: 1px solid $text-color-light;
 
-.byline a {
-  color: $text-color-light;
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
-
-  &:last-of-type {
-    padding-right: .8em;
+  &:after {
+    content: "\2026";
   }
-}
-
-.site-content .date {
-  border-left: 1px solid;
-  padding-left: 1em;
 }
