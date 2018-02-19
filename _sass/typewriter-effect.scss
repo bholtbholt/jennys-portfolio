@@ -1,0 +1,43 @@
+// Typewriting Effect taken from
+// https://css-tricks.com/snippets/css/typewriter-effect/
+$cursor-color: $secondary-color;
+.typewriter-effect {
+  // Handling font specific overflow
+  display: block;
+  line-height: 1.6;
+  font-kerning: none;
+  letter-spacing: -.01ch;
+
+  // Typewriter Effect
+  overflow: hidden; // Ensures the content is not revealed until the animation
+  white-space: nowrap; // Keeps the content on a single line
+  margin-left: auto; // Creates the scrolling effect
+  margin-right: auto;
+
+  // The cursor
+  border-right: .3rem solid $cursor-color;
+
+  width: 0;
+  animation:
+    typing-reveal 1.8s steps(13) 1.12s forwards,
+    blinking-cursor .75s step-end infinite;
+}
+
+@keyframes typing-reveal {
+  0% { width: 0 }
+  // Handles the hanging J overflow
+  1% {
+    padding-right: .15em;
+    padding-left: .15em;
+  }
+  100% {
+    width: 100%;
+    padding-right: .15em;
+    padding-left: .15em;
+  }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: $cursor-color }
+}
