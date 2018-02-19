@@ -33,7 +33,7 @@ There are three main folders you'll want to edit:
 1. Click on the pencil icon toward the top right corner
 
 ## Writing or editing articles
-All your articles are written in Markdown, which makes it easy to edit. The basics you'll use for this site are:
+All your articles are written in [Markdown](https://daringfireball.net/projects/markdown/basics), which makes it easy to edit. The basics you'll use for this site are:
 ```
 ### For Subheadlines
 _for italics_
@@ -47,10 +47,9 @@ All of your Markdown files *must have dashes at the top* of the document. This i
 ```
 ---
 title: Which changes the title of your document. This is useful for when you need to add punctuation to the title
-date: The date you want to appear on your article
+date: The date of the published article. Newer dates appear first in sort order
 publisher: The name of the publisher who published the article
 published_url: The url of the published article (from an external site)
-order: order in which articles appear, smallest first. 0 appears before 10. Defaults to 99.
 image_url: The url of the image from the article (from an external site)
 ---
 ```
@@ -58,5 +57,5 @@ image_url: The url of the image from the article (from an external site)
 ## Saving changes
 1. At the bottom of the screen is the Commit dialog
 1. Enter a commit message on the first line, something like "Add Smart People with Bad Resumes Article" or "Update My Other Article".
-1. Choose Commit directly to the `master` branch
+1. Choose Commit directly to the `gh-pages` branch
 1. Press Commit

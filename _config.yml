@@ -43,13 +43,11 @@ defaults:
       type: technical-writing
     values:
       layout: collection
-      order: 99
   -
     scope:
       type: content-writing
     values:
       layout: collection
-      order: 99
 
 
 # Exclude from processing.
