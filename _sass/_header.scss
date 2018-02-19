@@ -1,7 +1,7 @@
 .site-header {
   display: flex;
   flex-direction: column;
-  min-height: 30vh;
+  min-height: 20vh;
   justify-content: flex-end;
   align-items: center;
   color: $text-color;
@@ -43,10 +43,6 @@
 
   &:hover {
     background-color: $primary-color-hover;
-  }
-
-  @media ($media-sm) {
-    font-size: 12px;
   }
 
   @media ($media-lg) {
