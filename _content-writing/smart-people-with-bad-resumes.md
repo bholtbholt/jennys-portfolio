@@ -1,7 +1,6 @@
 ---
 publisher: Medium
 published_url: https://medium.com/@jennypreswick/smart-people-with-bad-resumes-b136c52a617f
-date: 2016-12-09
 image_url: https://cdn-images-1.medium.com/max/2000/1*Md0nf2zphKwIdioEBRYqSg.jpeg
 ---
 
