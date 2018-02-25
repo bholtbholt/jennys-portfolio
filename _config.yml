@@ -20,6 +20,11 @@ url: http://jennypreswick.com
 medium: https://medium.com/@jennypreswick
 linkedin: https://www.linkedin.com/in/jennypreswick/
 
+form:
+  action: https://2vauwh7ky0.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer
+  ses_email: staticsitecontactform@gmail.com
+  send_to_email: jennypreswick@gmail.com
+
 # Build settings
 markdown: kramdown
 theme: minima

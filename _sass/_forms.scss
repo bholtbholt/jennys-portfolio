@@ -24,6 +24,11 @@ textarea.form-control {
   resize: vertical;
 }
 
+button[disabled] {
+  opacity: .8;
+  cursor: not-allowed;
+}
+
 .btn-primary {
   font-family: 'Libre Baskerville', Georgia, serif;
   font-weight: bold;

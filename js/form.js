@@ -2,11 +2,22 @@
   const form = document.getElementById('js-submit-form');
   const formResponse = document.getElementById('js-form-response');
 
+  // Toggles the button state between disabled and enabled
+  // Uses data-label to reinstate the button label
+  function toggleButtonState(button) {
+    button.disabled = !button.disabled;
+    button.innerHTML = button.disabled ? '<div class="loading-dots"></div>' : button.getAttribute('data-label');
+  }
+
   form.onsubmit = e => {
     e.preventDefault();
 
     const formElements = Array.from(form);
     const data = {};
+
+    // Disable submissions, show loading
+    const submitButton = e.target.querySelector('[type="submit"]');
+    toggleButtonState(submitButton);
 
     // reset form response message
     formResponse.innerHTML = '';
@@ -25,6 +36,7 @@
 
     // Callback function
     xhr.onloadend = response => {
+      toggleButtonState(submitButton);
       if (response.target.status === 200) {
         formElements.filter(input => input.type !== 'hidden').map(input => (input.value = ''));
         formResponse.classList.add('_success', '_slide-in');
@@ -33,6 +45,7 @@
         formResponse.classList.add('_warning', '_slide-in');
         formResponse.innerHTML =
           'Something went wrong. Please try again, or <a href="mailto:jennypreswick@gmail.com">email me directly</a>.';
+        console.error(JSON.parse(response.target.response).message);
       }
     };
   };
