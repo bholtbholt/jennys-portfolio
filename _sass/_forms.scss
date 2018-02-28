@@ -76,3 +76,12 @@ button[disabled] {
   color: $white;
   border-bottom: 1px solid $white;
 }
+
+.form-response._fade-out {
+  animation: fade-out 8s forwards;
+}
+
+@keyframes fade-out {
+  90%  { opacity: 1 }
+  100% { opacity: 0 }
+}
