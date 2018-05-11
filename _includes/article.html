@@ -1,16 +1,14 @@
-{% if include.article.published_url %}
-  {% assign link = include.article.published_url %}
-{% else %}
-  {% assign link = include.article.url %}
-{% endif %}
-
 <article id="{{ include.article.slug }}">
   {% if include.article.image_url %}
     <img src="{{ include.article.image_url }}" />
   {% endif %}
 
   <h2>
-    <a href="{{ link }}" target="_blank">{{ include.article.title }}</a>
+    {% if include.article.published_url %}
+      <a href="{{ include.article.published_url }}" target="_blank" rel="nofollow">{{ include.article.title }}</a>
+    {% else %}
+      {{ include.article.title }}
+    {% endif %}
   </h2>
 
   {{ include.article.content }}

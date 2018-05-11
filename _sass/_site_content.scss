@@ -26,6 +26,12 @@
   }
 }
 
+.site-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: -1rem;
+  margin-top: $space;
+}
+
 .site-content img {
   max-height: 200px;
   object-fit: cover;
