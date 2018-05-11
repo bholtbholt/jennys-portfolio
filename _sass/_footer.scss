@@ -1,0 +1,40 @@
+.site-footer {
+  list-style: none;
+  text-align: center;
+  font-size: .85em;
+  color: $text-color-light;
+}
+
+.site-footer li {
+  display: inline-block;
+  margin-left: $margin-sm;
+  margin-right: $margin-sm;
+
+  &:first-of-type {
+    margin-left: initial;
+  }
+
+  &:last-of-type {
+    margin-right: initial;
+  }
+}
+
+.site-footer a {
+  color: inherit;
+  border-bottom: none;
+
+  &:hover,
+  &:focus {
+    color: $primary-color-hover;
+  }
+}
+
+.svg-icon {
+  position: relative;
+  top: -.0625em;
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+}
