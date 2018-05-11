@@ -30,6 +30,7 @@ markdown: kramdown
 theme: minima
 port: 3000
 safe: true
+source: src
 
 sass:
   style: compressed

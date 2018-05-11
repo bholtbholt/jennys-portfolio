@@ -18,11 +18,11 @@ bundle exec jekyll serve
 
 ## Structure
 There are three main folders you'll want to edit:
-- `_technical-writing`: where all the technical writing files reside
-- `_content-writing`: where all the content writing files reside
-- `_includes`: where the About and Contact pages reside
+- `src/_technical-writing`: where all the technical writing files reside
+- `src/_content-writing`: where all the content writing files reside
+- `src/_includes`: where the About and Contact pages reside
 
-## Adding Case Studies or Content Writing articles
+## Adding Technical Writing or Content Writing articles
 1. Navigate to the folder of the files you want to change
 1. Click "Create New File" in the top right corner
 1. Name your file the same as the title in lowercase, with hyphens instead of spaces, and no additional punctuation. The file format is `.md` which stands for Markdown. `Jenny's Best Title Ever = jennys-best-title-ever.md`
@@ -43,7 +43,7 @@ And blank spaces between paragraphs
 ```
 For full documentation visit the [Markdown website](https://daringfireball.net/projects/markdown/basics).
 
-All of your Markdown files *must have dashes at the top* of the document. This is called [Front Matter](https://jekyllrb.com/docs/frontmatter/). Front Matter allows you to specify additional properties on the document, which are all optional. Front Matter properties for Case Studies and Writing articles are:
+All of your Markdown files *must have dashes at the top* of the document. This is called [Front Matter](https://jekyllrb.com/docs/frontmatter/). Front Matter allows you to specify additional properties on the document, which are all optional. Front Matter properties for Technical Writing and Content Writing articles are:
 ```
 ---
 title: Which changes the title of your document. This is useful for when you need to add punctuation to the title
