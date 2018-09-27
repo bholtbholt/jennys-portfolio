@@ -245,10 +245,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  github-pages (= 192)
-  jekyll
-  jekyll-feed
-  tzinfo-data
+  github-pages
 
 BUNDLED WITH
    1.16.1
