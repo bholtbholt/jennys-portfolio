@@ -29,7 +29,6 @@ form:
 markdown: kramdown
 port: 3000
 safe: true
-source: src
 
 sass:
   style: compressed
